@@ -16,9 +16,12 @@ def main():
     """
     while True:
         try:
-            query_line = input()
-            cardinalities_line = input()
+            # query_line = input()
+            # cardinalities_line = input()
+            query_line = 'R1(b,x,y, a), R2(b,c,z), R3(c,d,w)'
+            cardinalities_line = 'R1=1000; R2=500; R3=800'
             solve(query_line, cardinalities_line)
+            break
         except EOFError:
             break
         except Exception as e:
