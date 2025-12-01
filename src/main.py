@@ -18,8 +18,8 @@ def main():
         try:
             # query_line = input()
             # cardinalities_line = input()
-            query_line = 'R1(b,x,y, a), R2(b,c,z), R3(c,d,w)'
-            cardinalities_line = 'R1=1000; R2=500; R3=800'
+            query_line = 'Q0(x,y,z),Q1(x,a,b),Q2(y,c,d),Q3(z,e,f),Q4(a,g,h),Q5(b,i,j),Q6(c,k,l),Q7(d,m,n),Q8(e,o,p),Q9(f,q,r),Q10(g,s,t),Q11(i,u,v),Q12(k,w,aa),Q13(m,bb,cc)'
+            cardinalities_line = "Q0=130;Q1=140;Q2=120;Q3=150;Q4=110;Q5=160;Q6=130;Q7=140;Q8=120;Q9=150;Q10=110;Q11=160;Q12=130;Q13=140"
             solve(query_line, cardinalities_line)
             break
         except EOFError:
